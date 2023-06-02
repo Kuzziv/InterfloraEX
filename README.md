@@ -1,50 +1,9 @@
 # InterfloraEX
 
-Taxonomy exercise 
-====
-
-We ask candidates to get this exercise back within 3 days. 
-It should take approximately 3 hours to finish this task. Please let us know whether this is possible or if you need 
-more time.
-
-This is a task for showing OOP & API skills. 
-Feel free to use the technology/framework you are the most comfortable with. Pseudo-code will also be accepted as long 
-as it's clean, descriptive and taking care of edge-cases.
-
-If you don't have time to finish the task, please leave comments describing what you wanted to have implemented.
-
-Exercice
-We in Interflora Denmark, need to model how our company is structured so we can help our new employees have a better overview of our 
-company structure.
-
-We have our root node (only one, in our case the CEO) and several child nodes.
-Each of these nodes may have its own children. 
-
-It can be structured as something like this: 
-        root
-       /    \
-      a      b
-      |
-      c
-    /     \
-   d     e
-
-
-We need 3 endpoints that will serve basic operations :
-Add a new node to the tree.
-Get all child nodes of a given node from the tree. (Just 1 layer of children)
-Change the parent node of a given node.
-
-Each node should have the following data: 
-
-Node identifier.
-node name.
-who is the parent node.
-The height of the node. (in the example above height(root)=0 and height(a)=1)
-Managers should have an extra field specifying the name of the department they are managing.
-Developers should have an extra field specifying the name of the programming language they are strongest in.
-
-Please upload your solution to a git repository (BitBucket, GitLab or GitHub) and provide a README.md file with 
-documentation.
-
 Feel free to describe, what you would have improved in your solution if more time was given?
+
+Reflections and Future Improvements
+After reading the assignment, I decided to implement a console application in C# to ensure a solid understanding of its requirements. Once I had built the initial version of the application, I proceeded to create a separate project using Razor Pages. However, during the process, I encountered difficulties with my database configuration. I dedicated around an hour trying to resolve the issue but eventually realized that, given the three-hour time frame, it would not be feasible to complete the task using Razor Pages. Consequently, I returned to my console application and rebuilt it, including writing unit tests for the core class.
+Given more time for this assignment, I would have attempted to reimplement the solution using C# with Razor Pages, enabling the development of a web application. However, my limited experience with Entity Framework became a hindrance in achieving the desired outcome within the given constraints.
+These challenges and time limitations provided valuable insights into areas for improvement. Specifically, I recognize the potential to leverage Entity Framework and Razor Pages to create a more comprehensive and interactive solution. Exploring these technologies further would have allowed me to deliver a more robust application.
+Overall, this experience has deepened my understanding of the assignment and highlighted areas where further development and learning can take place
