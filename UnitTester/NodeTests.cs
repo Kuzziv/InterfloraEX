@@ -25,7 +25,7 @@ namespace UnitTester
 
             // Act
             companyStructure.AddNode(newNode, 2);
-            var children = companyStructure.GetChildren(2);
+            List<Node> children = companyStructure.GetChildren(2);
 
             // Assert
             Assert.IsTrue(children.Contains(newNode));
@@ -48,7 +48,7 @@ namespace UnitTester
             companyStructure.AddNode(childNode2, 2);
 
             // Act
-            var children = companyStructure.GetChildren(2);
+            List<Node> children = companyStructure.GetChildren(2);
 
             // Assert
             Assert.IsTrue(children.Contains(childNode1));
@@ -72,7 +72,7 @@ namespace UnitTester
 
             // Act
             companyStructure.ChangeParent(4, 3);
-            var newParent = childNode.Parent;
+            Node newParent = childNode.Parent;
 
             // Assert
             Assert.AreEqual(parentNode2, newParent);

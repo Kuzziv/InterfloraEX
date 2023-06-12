@@ -65,9 +65,9 @@ namespace InterfloraEX.Models
             {
                 return node;
             }
-            foreach (var child in node.GetChildren())
+            foreach (Node child in node.GetChildren())
             {
-                var result = FindNode(child, nodeId);
+                Node result = FindNode(child, nodeId);
                 if (result != null)
                 {
                     return result;
@@ -108,7 +108,7 @@ namespace InterfloraEX.Models
             Console.WriteLine();
 
             // Recursively print the children nodes
-            foreach (var child in node.GetChildren())
+            foreach (Node child in node.GetChildren())
             {
                 PrintNode(child, level + 1);
             }

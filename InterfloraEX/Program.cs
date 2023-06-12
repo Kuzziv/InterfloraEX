@@ -30,10 +30,10 @@ company.PrintNode(ceo);
 
 // Get child nodes of a given node
 Console.WriteLine("\nChild nodes of 'Manager A':");
-var managerAChildren = company.GetChildren(managerA.Identifier);
+List<Node> managerAChildren = company.GetChildren(managerA.Identifier);
 if (managerAChildren != null)
 {
-    foreach (var child in managerAChildren)
+    foreach (Node child in managerAChildren)
     {
         Console.WriteLine($"- {child.Name}");
     }
